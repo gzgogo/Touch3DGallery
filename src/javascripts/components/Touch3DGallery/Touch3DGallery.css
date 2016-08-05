@@ -1,0 +1,61 @@
+
+.touch-3d-gallery {
+  width: 100%;
+  height: 100%;
+}
+
+.item-wrapper{
+  width: 42%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+
+}
+.item-wrapper a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.item-wrapper a.dg-transition{
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.item-wrapper a img{
+  width: 100%;
+  height: 100%;
+  border:0;
+  display: block;
+}
+.item-wrapper a div{
+  font-style: italic;
+  text-align: center;
+  line-height: 50px;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+  bottom: -55px;
+  display: none;
+  position: absolute;
+}
+.item-wrapper a.dg-center div{
+  display: block;
+}
